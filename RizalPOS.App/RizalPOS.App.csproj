@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9E8F1E44-D057-400E-AEC9-CD95AC577EC9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RizalPOS.App</RootNamespace>
+    <AssemblyName>RizalPOS.App</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\shopping_cart.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>RizalPOS.App.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AdamsLair.WinForms, Version=1.1.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AdamsLair.WinForms.1.1.4.0\lib\net45\AdamsLair.WinForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.6.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.6\lib\itextsharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.8.3\lib\net45\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="mysql.data.entity.EF6, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.Entities.6.8.3.0\lib\net45\mysql.data.entity.EF6.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PopupControl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AdamsLair.WinForms.PopupControl.1.0.0.0\lib\net40\PopupControl.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Customers\CustomerDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customers\CustomerDialog.Designer.cs">
+      <DependentUpon>CustomerDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\LoginDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\LoginDialog.Designer.cs">
+      <DependentUpon>LoginDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\MenuDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\MenuDialog.Designer.cs">
+      <DependentUpon>MenuDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\UserManagementDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\UserManagementDialog.Designer.cs">
+      <DependentUpon>UserManagementDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Products\CategoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Products\CategoryForm.Designer.cs">
+      <DependentUpon>CategoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Products\CustomerListDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Products\CustomerListDialog.Designer.cs">
+      <DependentUpon>CustomerListDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Products\ProductList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Products\ProductList.Designer.cs">
+      <DependentUpon>ProductList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Products\ProductListDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Products\ProductListDialog.Designer.cs">
+      <DependentUpon>ProductListDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\ReportsMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportsMainForm.Designer.cs">
+      <DependentUpon>ReportsMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\PaymentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\PaymentForm.Designer.cs">
+      <DependentUpon>PaymentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\ReturnChangeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\ReturnChangeForm.Designer.cs">
+      <DependentUpon>ReturnChangeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\SalesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\SalesForm.Designer.cs">
+      <DependentUpon>SalesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stocks\StockRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stocks\StockRecord.Designer.cs">
+      <DependentUpon>StockRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transactions\TransactionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transactions\TransactionsForm.Designer.cs">
+      <DependentUpon>TransactionsForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Customers\CustomerDialog.resx">
+      <DependentUpon>CustomerDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\LoginDialog.resx">
+      <DependentUpon>LoginDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\MenuDialog.resx">
+      <DependentUpon>MenuDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\UserManagementDialog.resx">
+      <DependentUpon>UserManagementDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products\CategoryForm.resx">
+      <DependentUpon>CategoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products\CustomerListDialog.resx">
+      <DependentUpon>CustomerListDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products\ProductList.resx">
+      <DependentUpon>ProductList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products\ProductListDialog.resx">
+      <DependentUpon>ProductListDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reports\ReportsMainForm.resx">
+      <DependentUpon>ReportsMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\PaymentForm.resx">
+      <DependentUpon>PaymentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\ReturnChangeForm.resx">
+      <DependentUpon>ReturnChangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SalesForm.resx">
+      <DependentUpon>SalesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stocks\StockRecord.resx">
+      <DependentUpon>StockRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transactions\TransactionsForm.resx">
+      <DependentUpon>TransactionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RizalPOS.Configuration\RizalPOS.Configuration.csproj">
+      <Project>{a6f127be-0327-4695-8264-dd6b5dcaeb01}</Project>
+      <Name>RizalPOS.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RizalPOS.Domain\RizalPOS.Domain.csproj">
+      <Project>{bec386cb-33c4-46e6-8f2d-8ed3318df521}</Project>
+      <Name>RizalPOS.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reports\pdfs\sampler.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\shopping_cart.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enter_key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barcode.PNG" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

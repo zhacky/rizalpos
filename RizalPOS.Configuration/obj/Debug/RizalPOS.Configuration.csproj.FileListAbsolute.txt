@@ -1,0 +1,8 @@
+C:\Users\Zhack\Documents\Visual Studio 2013\Projects\RizalPOS\RizalPOS.Configuration\bin\Debug\RizalPOS.Configuration.exe.config
+C:\Users\Zhack\Documents\Visual Studio 2013\Projects\RizalPOS\RizalPOS.Configuration\bin\Debug\RizalPOS.Configuration.exe
+C:\Users\Zhack\Documents\Visual Studio 2013\Projects\RizalPOS\RizalPOS.Configuration\bin\Debug\RizalPOS.Configuration.pdb
+C:\Users\Zhack\Documents\Visual Studio 2013\Projects\RizalPOS\RizalPOS.Configuration\obj\Debug\RizalPOS.Configuration.DB.DatabaseConfiguration.resources
+C:\Users\Zhack\Documents\Visual Studio 2013\Projects\RizalPOS\RizalPOS.Configuration\obj\Debug\RizalPOS.Configuration.Properties.Resources.resources
+C:\Users\Zhack\Documents\Visual Studio 2013\Projects\RizalPOS\RizalPOS.Configuration\obj\Debug\RizalPOS.Configuration.csproj.GenerateResource.Cache
+C:\Users\Zhack\Documents\Visual Studio 2013\Projects\RizalPOS\RizalPOS.Configuration\obj\Debug\RizalPOS.Configuration.exe
+C:\Users\Zhack\Documents\Visual Studio 2013\Projects\RizalPOS\RizalPOS.Configuration\obj\Debug\RizalPOS.Configuration.pdb
